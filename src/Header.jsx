@@ -1,6 +1,11 @@
-import React from 'react'
+import { useContext } from "react"
+import { ThemeContext } from "./App";
 
-function Header({isDarkMode}) {
+function Header() {
+
+  const isDarkMode = useContext(ThemeContext);
+
+
   return (
     <header>
         <p className={isDarkMode ? "light-text" : "dark-text"}>Logo</p>

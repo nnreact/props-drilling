@@ -1,4 +1,8 @@
-function Title({Text, idm}) {
+import { useContext } from "react"
+import { ThemeContext } from "./App"
+
+function Title({Text}) {
+  const idm = useContext(ThemeContext);
   return (
     <h1 className={idm ? "light-text" : "dark-text"}>
         {Text}

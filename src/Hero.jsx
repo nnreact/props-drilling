@@ -1,10 +1,10 @@
 import Title from "./Title.jsx";
 import Button from "./Button.jsx";
-function Hero({isDarkMode}) {
+function Hero() {
   return (
     <div className="hero-section">
-        <Title idm={isDarkMode} Text="NN Solutions" />      
-        <Button idm={isDarkMode} Text="Contact us" />      
+        <Title Text="NN Solutions" />      
+        <Button Text="Contact us" />      
     </div>
   )
 }
